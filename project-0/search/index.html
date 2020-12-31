@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- This is where i began to apply knowledge for Lectures 0 and 1 which covered HTML/CSS and Git. -->
+<!-- Aim is to build this project from scrath using no frameworks -->
 
 <head>
     <title>Search</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
+
+<!-- Any <input> element (whether its type is text, submit, number, or something else entirely) 
+can have name and value attributes that will become GET parameters when a form is submitted. -->
+
 <div id="google-main">
     <form action="https://google.com/search" target="_blank">
         <input type="text" name="q">
@@ -25,6 +30,14 @@
     </form>
 </div>
 
+<div id="advanced-search">
+    <form action="https://www.google.com/search" target="_blank">
+        <label for="fname">Advanced Google Search</label>
+        <input type="text" name="q">
+        <input type="hidden" name="tbm" value="isch">
+        <input class="multiple-input" type="submit" value="Google Image Search">
+    </form>
+</div>
 </body>
 
 </html>

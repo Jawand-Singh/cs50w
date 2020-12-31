@@ -1,4 +1,19 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px
+}
+    
 form {
     margin: 20px;
     display : inline-block;
+}
+
+label {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.multiple-input {
+    display: block;
+    margin: 10px 0px;
 }
