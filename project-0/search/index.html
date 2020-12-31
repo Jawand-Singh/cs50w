@@ -6,14 +6,26 @@
     <title>Search</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/path/to/tailwind.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
-    <form action="https://google.com/search">
+<div id="google-main">
+    <form action="https://google.com/search" target="_blank">
         <input type="text" name="q">
         <input type="submit" value="Google Search">
     </form>
+</div>
+
+<div id="google-image">
+    <form action="https://www.google.com/search" target="_blank">
+        <input type="text" name="q">
+        <input type="hidden" name="tbm" value="isch">
+        <input type="submit" value="Google Image Search">
+    </form>
+</div>
+
 </body>
 
 </html>
+
